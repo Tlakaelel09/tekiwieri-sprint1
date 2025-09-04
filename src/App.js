@@ -2,12 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Cuestionario from './components/Cuestionario';
+import Nav from './components/Nav'; // 👈 Importamos el nuevo Nav
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        <Nav /> {/* 👈 Ahora usamos Nav en lugar de Header */}
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -21,17 +22,7 @@ function App() {
   );
 }
 
-function Header() {
-  return (
-    <header className="header">
-      <h1>TekiWieri</h1>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="/cuestionario">Autoevaluación</a>
-      </nav>
-    </header>
-  );
-}
+// Eliminamos la función Header() porque ya no se usará
 
 function Footer() {
   return (
@@ -54,3 +45,4 @@ function SOSButton() {
 }
 
 export default App;
+
