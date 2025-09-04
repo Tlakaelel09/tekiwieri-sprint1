@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/tekiwieri-sprint1/static/css/main.947db08e.css",
+    "main.js": "/tekiwieri-sprint1/static/js/main.d130095d.js",
+    "static/media/hero-tekiwieri.jpg": "/tekiwieri-sprint1/static/media/hero-tekiwieri.4d9bedcb8a2cae2faa7d.jpg",
+    "index.html": "/tekiwieri-sprint1/index.html",
+    "main.947db08e.css.map": "/tekiwieri-sprint1/static/css/main.947db08e.css.map",
+    "main.d130095d.js.map": "/tekiwieri-sprint1/static/js/main.d130095d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.947db08e.css",
+    "static/js/main.d130095d.js"
+  ]
+}
