@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Cuestionario from "./components/Cuestionario";
 
-import "./components/nav-hero.css";
+import "./App.css";
 
 function App() {
   return (
