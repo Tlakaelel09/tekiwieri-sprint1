@@ -1,12 +1,20 @@
 // src/components/Home.js
 import React from "react";
 import { Link } from "react-router-dom";
+import heroImage from '../assets/hero-tekiwieri.jpg';
 
 const Home = () => {
   return (
     <>
       {/* HERO */}
-      <section className="tw-hero">
+      <section className="tw-hero"
+      style={{
+        backgroundImage: `url(${heroImage})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}
+      >
         <div className="tw-hero__content">
           <p className="eyebrow">Sprint 1 · MVP</p>
           <h1>
