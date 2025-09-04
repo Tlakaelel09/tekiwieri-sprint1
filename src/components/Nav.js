@@ -1,5 +1,5 @@
+// src/components/Nav.js
 import "./nav-hero.css";
-
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -7,34 +7,41 @@ const Nav = () => {
   const { pathname } = useLocation();
 
   return (
-  <header className="tw-nav">
-    <div className="tw-nav__brand">
-      <img 
-        src="/logo-tekiwieri.png" 
-        alt="TekiWieri Logo" 
-        className="tw-logo" 
-      />
-      <span className="tw-brand-text">TekiWieri</span>
-    </div>
+    <header className="tw-nav">
+      {/* LOGO + BRAND */}
+      <div className="tw-nav__brand">
+        <img
+          src="/logo-tekiwieri.png"
+          alt="TekiWieri Logo"
+          className="tw-logo"
+        />
+        <span className="tw-brand-text">TekiWieri</span>
+      </div>
 
-
+      {/* BOTÓN HAMBURGUESA (MÓVIL) */}
       <input id="tw-nav-toggle" type="checkbox" className="tw-nav__toggle" />
-      <label htmlFor="tw-nav-toggle" className="tw-nav__hamburger" aria-label="Abrir menú">
+      <label
+        htmlFor="tw-nav-toggle"
+        className="tw-nav__hamburger"
+        aria-label="Abrir menú"
+      >
         <span />
         <span />
         <span />
       </label>
 
+      {/* LINKS DE NAVEGACIÓN */}
       <nav className="tw-nav__links">
-        <Link className={pathname === "/" ? "active" : ""} to="/">Inicio</Link>
-        <Link className={pathname === "/cuestionario" ? "active" : ""} to="/cuestionario">
+        <Link className={pathname === "/" ? "active" : ""} to="/">
+          Inicio
+        </Link>
+        <Link
+          className={pathname === "/cuestionario" ? "active" : ""}
+          to="/cuestionario"
+        >
           Autoevaluación
         </Link>
-        <a
-          className="tw-cta"
-          href="tel:555AYUDA"
-          title="Línea de ayuda"
-        >
+        <a className="tw-cta" href="tel:555AYUDA" title="Línea de ayuda">
           Línea de ayuda
         </a>
       </nav>
