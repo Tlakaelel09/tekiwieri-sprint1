@@ -8,7 +8,7 @@ const preguntas = [
   "¿Te cuesta dormir o dormir demasiado últimamente?"
 ];
 
-function Questionario() {
+function Cuestionario() {
   const [preguntaActual, setPreguntaActual] = useState(0);
   const [respuestas, setRespuestas] = useState(Array(preguntas.length).fill(null));
   const [mostrarResultado, setMostrarResultado] = useState(false);
@@ -70,4 +70,4 @@ function Questionario() {
   );
 }
 
-export default Questionnaire;
+export default Cuestionario;
