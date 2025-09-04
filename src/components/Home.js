@@ -1,18 +1,61 @@
-import React from 'react';
+// src/components/Home.js
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Home() {
+const Home = () => {
   return (
-    <div className="page">
-      <h2>Bienvenido a TekiWieri</h2>
-      <p>
-        Tu espacio seguro para cuidar tu salud emocional.
-        Aquí puedes conocer tu estado emocional y acceder a ayuda inmediata si la necesitas.
-      </p>
-      <a href="/cuestionario" className="btn-primary">
-        Iniciar autoevaluación
-      </a>
-    </div>
+    <>
+      {/* HERO */}
+      <section className="tw-hero">
+        <div className="tw-hero__content">
+          <p className="eyebrow">Sprint 1 · MVP</p>
+          <h1>
+            Prevención con <span>TekiWieri</span>
+          </h1>
+          <p className="lead">
+            Botón SOS y cuestionario de riesgo emocional desarrollados en React.
+          </p>
+
+          <div className="actions">
+            <Link to="/cuestionario" className="btn primary">
+              Ir al cuestionario
+            </Link>
+            <a
+              className="btn ghost"
+              href="tel:555AYUDA"
+              title="Línea de ayuda"
+            >
+              Línea de ayuda
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURES */}
+      <section className="tw-features">
+        <article className="card">
+          <h3>HU-01: Botón SOS</h3>
+          <p>Acceso inmediato a contacto de emergencia desde cualquier vista.</p>
+        </article>
+
+        <article className="card">
+          <h3>HU-02: Cuestionario</h3>
+          <p>
+            Herramienta de autoevaluación para detectar niveles de riesgo
+            emocional.
+          </p>
+        </article>
+
+        <article className="card">
+          <h3>HU-06: Interfaz amigable</h3>
+          <p>
+            Navegación sencilla y clara que prioriza la accesibilidad y el
+            bienestar del usuario.
+          </p>
+        </article>
+      </section>
+    </>
   );
-}
+};
 
 export default Home;
