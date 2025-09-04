@@ -22,7 +22,7 @@ function App() {
   );
 }
 
-// Eliminamos la función Header() porque ya no se usará
+
 
 function Footer() {
   return (
