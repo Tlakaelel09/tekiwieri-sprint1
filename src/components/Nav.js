@@ -1,4 +1,4 @@
-import "./components/nav-hero.css";
+import "./nav-hero.css";
 
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
