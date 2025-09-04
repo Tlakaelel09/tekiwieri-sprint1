@@ -39,6 +39,11 @@ main {
   text-align: center;
 }
 
+.header img {
+  height: 40px;
+  width: auto;
+}
+
 .btn-primary {
   display: inline-block;
   margin-top: 1.5rem;
