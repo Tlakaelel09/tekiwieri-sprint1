@@ -6,11 +6,16 @@ const Nav = () => {
   const { pathname } = useLocation();
 
   return (
-    <header className="tw-nav">
-      <div className="tw-nav__brand">
-        <span className="tw-logo">🐺</span>
-        <span className="tw-brand-text">TekiWieri</span>
-      </div>
+  <header className="tw-nav">
+    <div className="tw-nav__brand">
+      <img 
+        src="/logo-tekiwieri.png" 
+        alt="TekiWieri Logo" 
+        className="tw-logo" 
+      />
+      <span className="tw-brand-text">TekiWieri</span>
+    </div>
+
 
       <input id="tw-nav-toggle" type="checkbox" className="tw-nav__toggle" />
       <label htmlFor="tw-nav-toggle" className="tw-nav__hamburger" aria-label="Abrir menú">
