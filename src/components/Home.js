@@ -7,7 +7,8 @@ const Home = () => {
   return (
     <>
       {/* HERO */}
-      <section className="tw-hero"
+      <section 
+      className="tw-hero"
       style={{
         backgroundImage: `url(${heroImage})`,
         backgroundPosition: 'center',
