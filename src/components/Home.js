@@ -1,7 +1,7 @@
 // src/components/Home.js
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImage from '../assets/hero-tekiwieri.jpg';
+import heroImage from '../assets/hero-tekiwieri-v2.jpg';
 
 const Home = () => {
   return (
