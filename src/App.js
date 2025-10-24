@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Cuestionario from "./components/Cuestionario";
-
+import Directorio from './components/Directorio';
+import ContenidoEducativo from './components/ContenidoEducativo';
 import "./App.css";
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cuestionario" element={<Cuestionario />} />
+            <Route path="/directorio" element={<Directorio />} />
+          <Route path="/contenido" element={<ContenidoEducativo />} />
           </Routes>
         </main>
         <Footer />
