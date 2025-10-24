@@ -6,75 +6,60 @@ export default function ContenidoEducativo() {
     <div className="p-6 max-w-4xl mx-auto">
       <h2 className="text-2xl font-bold mb-4">Contenidos Educativos Validados</h2>
       {/* Artículo educativo validado */}
-      <section className="mb-8 p-4 border rounded-lg bg-blue-50">
-        <h3 className="text-xl font-bold text-gray-800 mb-3">
+      <section style={{ marginBottom: '2rem', padding: '1.5rem', border: '1px solid #e2e8f0', borderRadius: '0.5rem', backgroundColor: '#f8fafc' }}>
+        <h3 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '1rem', color: '#1e293b' }}>
           “Si habla de suicidio, es solo para llamar la atención”… ¿en serio?
         </h3>
-        <p className="mb-3">
+        
+        <p style={{ marginBottom: '1rem' }}>
           ¿Alguna vez has escuchado esa frase? Tal vez la hayas dicho sin querer, o la hayas oído en casa, en la escuela o en redes. Pero hay algo que necesitas saber: <strong>quien habla del suicidio está pidiendo ayuda</strong>. No está “buscando atención”. Está <em>gritando en silencio</em>.
         </p>
-        <p className="mb-3">
-          Uno de los mitos más peligrosos sobre el suicidio es que <em>“quien de verdad quiere quitarse la vida no avisa”</em>. La realidad es justo lo contrario: <strong>hasta en 8 de cada 10 casos, la persona da señales claras</strong> antes de actuar. Puede ser un comentario como:  
+        
+        <p style={{ marginBottom: '1rem' }}>
+          Uno de los mitos más peligrosos sobre el suicidio es que <em>“quien de verdad quiere quitarse la vida no avisa”</em>. La realidad es justo lo contrario: <strong>hasta en 8 de cada 10 casos, la persona da señales claras</strong> antes de actuar. Puede ser un comentario como:
         </p>
-        <ul className="list-disc pl-5 mb-3 text-gray-700">
+        
+        <ul style={{ paddingLeft: '1.25rem', marginBottom: '1rem', color: '#475569' }}>
           <li>“Ya no aguanto”</li>
           <li>“Sería más fácil desaparecer”</li>
           <li>“Ustedes estarían mejor sin mí”</li>
         </ul>
-        <p className="mb-3">
+      
+        <p style={{ marginBottom: '1.5rem' }}>
           Esas no son “dramatizaciones”. Son <strong>señales de alerta</strong>. Y tú, sí puedes hacer algo.
         </p>
       
-        <h4 className="font-semibold text-lg mt-4 mb-2">¿Qué hacer si alguien menciona el suicidio?</h4>
-        <ol className="list-decimal pl-5 mb-3 space-y-2">
+        <h4 style={{ fontWeight: '600', fontSize: '1.125rem', marginBottom: '0.75rem' }}>
+          ¿Qué hacer si alguien menciona el suicidio?
+        </h4>
+        
+        <ol style={{ paddingLeft: '1.25rem', marginBottom: '1.5rem', lineHeight: '1.6' }}>
           <li>
-            <strong>Escucha sin juzgar.</strong> No digas “no digas eso” o “estás exagerando”. En vez de eso, pregúntale con calma:  
-            <blockquote className="ml-4 italic border-l-4 border-blue-500 pl-3 my-2">
+            <strong>Escucha sin juzgar.</strong> Pregúntale con calma:  
+            <blockquote style={{ margin: '0.75rem 0', paddingLeft: '1rem', borderLeft: '3px solid #3b82f6', fontStyle: 'italic', color: '#334155' }}>
               “¿Estás pensando en quitarte la vida?”
             </blockquote>
-            Sí, <strong>pregúntalo directamente</strong>. Estudios de la OMS y del Instituto Nacional de Psiquiatría confirman que hacer esta pregunta <em>no aumenta el riesgo</em>. Al contrario: abre la puerta al alivio.
+            Sí, <strong>pregúntalo directamente</strong>. Estudios de la OMS confirman que esto <em>no aumenta el riesgo</em>.
           </li>
           <li>
-            <strong>Quédate con esa persona.</strong> Si sientes que el riesgo es inminente, <strong>no lo dejes solo</strong>. Quédate hasta que esté a salvo o conectado con un especialista.
+            <strong>Quédate con esa persona.</strong> Si el riesgo es inminente, <strong>no lo dejes solo</strong>.
           </li>
           <li>
-            <strong>Busca ayuda profesional.</strong> En México, hay líneas gratuitas y confidenciales:
-            <ul className="list-disc pl-5 mt-1">
-              <li><strong>Línea UNAM</strong>: 55 5622 2222 (24/7)</li>
+            <strong>Busca ayuda profesional.</strong> En México:
+            <ul style={{ paddingLeft: '1.25rem', marginTop: '0.25rem' }}>
+              <li><strong>Línea UNAM</strong>: 55 5622 2222</li>
               <li><strong>CVV Teléfono de la Esperanza</strong>: 55 5259 8121</li>
-              <li><strong>Línea SIAP (Jalisco)</strong>: 33 3818 2000</li>
             </ul>
           </li>
         </ol>
       
-        <p className="mt-3 italic font-medium text-gray-700">
+        <p style={{ fontStyle: 'italic', fontWeight: '500', color: '#475569' }}>
           El suicidio no es una decisión, es una crisis.  
-          Nadie quiere morir. Lo que quiere quien piensa en el suicidio es <em>dejar de sufrir</em>.  
-          Y en ese momento de dolor, su mente no ve otras salidas. Pero <strong>la crisis es temporal</strong>.  
           Con apoyo, escucha y acompañamiento, <strong>sí se puede superar</strong>.
         </p>
       
-        <p className="mt-4 text-sm text-gray-600 border-t pt-2">
-          — Este artículo fue redactado por el equipo de Teki Wieri con base en guías de la OMS, el INSPI y el DIF Nacional, y validado por Cinthia Marisol Reyes Tapia, suicidóloga. Octubre 2025.
-        </p>
-      </section>
-      {/* Artículo breve */}
-  
-      <section className="mb-8 p-4 border rounded bg-gray-50">
-        <h3 className="font-bold text-lg mb-2">¿Qué hacer si alguien piensa en el suicidio?</h3>
-        <p>
-          Escuchar sin juzgar es el primer paso. No minimices su dolor ni digas frases como “es solo una etapa”. 
-          Pregúntale directamente: “¿Estás pensando en quitarte la vida?”. Esto no aumenta el riesgo, sino que abre la puerta al apoyo.
-        </p>
-        <p>
-          Anímalo a buscar ayuda profesional. En México, puede llamar a la <strong>Línea UNAM</strong>: 55 5622 2222 (24/7), 
-          o al <strong>CVV Teléfono de la Esperanza</strong>: 55 5259 8121.
-        </p>
-        <p>
-          Quédate con esa persona hasta que esté a salvo. No lo dejes solo si hay riesgo inminente.
-        </p>
-        <p className="italic mt-2">
-          — Validado por Cinthia Marisol Reyes Tapia, suicidóloga. Octubre 2025.
+        <p style={{ marginTop: '1.25rem', fontSize: '0.875rem', color: '#64748b', borderTop: '1px solid #e2e8f0', paddingTop: '1rem' }}>
+          — Este artículo fue redactado por el equipo de Teki Wieri y validado por Cinthia Marisol Reyes Tapia, suicidóloga. Octubre 2025.
         </p>
       </section>
 
@@ -85,7 +70,7 @@ export default function ContenidoEducativo() {
           <div>
             <h4 className="font-medium">Mitos y Realidades (IMSS)</h4>
             <img 
-              src="/infografias/suicidio_infografía.jpg" 
+              src="../data/infographics/suicidio_infografía.jpg" 
               alt="Infografía IMSS" 
               className="w-full border rounded mt-2"
             />
@@ -93,7 +78,7 @@ export default function ContenidoEducativo() {
           <div>
             <h4 className="font-medium">SIGNOS DE ALARMA (PAHO)</h4>
             <img 
-              src="/infografias/infografia-conducta-suicida.jpg" 
+              src="../data/infographics/infografia-conducta-suicida.jpg" 
               alt="Infografía PAHO" 
               className="w-full border rounded mt-2"
             />
@@ -103,16 +88,16 @@ export default function ContenidoEducativo() {
 
       {/* Video */}
       <section>
-        <h3 className="font-bold text-lg mb-2">¿Cómo salvar a alguien del suicidio? | Jessica Wolf | TEDxCancún</h3>
+        <h3 className="font-bold text-lg mb-2">Prevención del suicidio - Secretaría de Salud</h3>
         <iframe
           width="100%"
           height="315"
-          src="https://www.youtube.com/watch?v=JidcriWvw8g&t=149s"
-          title="¿Cómo salvar a alguien del suicidio? | Jessica Wolf | TEDxCancún"
+          src="https://www.youtube.com/embed/JqX1cX0jKqU?rel=0&modestbranding=1"
+          title="Prevención del suicidio - Secretaría de Salud"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="rounded"
+          loading="lazy"
         ></iframe>
       </section>
     </div>
