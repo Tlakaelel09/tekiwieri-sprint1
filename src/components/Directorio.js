@@ -1,6 +1,6 @@
 // src/components/Directorio.js
 import React, { useState } from 'react';
-import specialistsData from '../data/especialistas.json';
+import specialistsData from './data/especialistas.json';
 
 export default function Directorio() {
   const [locationFilter, setLocationFilter] = useState('');
