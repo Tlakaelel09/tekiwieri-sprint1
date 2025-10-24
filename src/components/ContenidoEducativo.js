@@ -75,7 +75,7 @@ export default function ContenidoEducativo() {
             </div>
             <div className="p-2">
               <img 
-                src="{suicidio_infografia}" 
+                src={suicidio_infografia}
                 alt="Infografía del IMSS sobre mitos y realidades del suicidio"
                 className="w-full h-auto rounded-lg border border-gray-200 object-contain"
                 loading="lazy"
@@ -89,7 +89,7 @@ export default function ContenidoEducativo() {
             </div>
             <div className="p-2">
               <img 
-                src="{infografia_conducta_suicida}" 
+                src={infografia_conducta_suicida}
                 alt="Infografía de la OPS sobre signos de alarma de conducta suicida"
                 className="w-full h-auto rounded-lg border border-gray-200 object-contain"
                 loading="lazy"
