@@ -103,12 +103,12 @@ export default function ContenidoEducativo() {
 
       {/* Video */}
       <section>
-        <h3 className="font-bold text-lg mb-2">Video: Prevención del suicidio</h3>
+        <h3 className="font-bold text-lg mb-2">¿Cómo salvar a alguien del suicidio? | Jessica Wolf | TEDxCancún</h3>
         <iframe
           width="100%"
           height="315"
           src="https://www.youtube.com/watch?v=JidcriWvw8g&t=149s"
-          title="Prevención del suicidio - Secretaría de Salud"
+          title="¿Cómo salvar a alguien del suicidio? | Jessica Wolf | TEDxCancún"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
