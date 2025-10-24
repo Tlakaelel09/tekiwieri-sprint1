@@ -101,15 +101,14 @@ export default function ContenidoEducativo() {
       <section className="mb-10">
         <h3 className="text-2xl font-bold text-gray-800 mb-4">Suicidio: cómo identificar los signos de alerta</h3>
         <div className="relative pt-[56.25%] max-w-4xl mx-auto"> {/* 16:9 aspect ratio */}
-          <iframe
-            src="https://www.youtube.com/embed/JqX1cX0jKqU?rel=0&modestbranding=1"
-            title="Prevención del suicidio - Secretaría de Salud"
-            className="absolute top-0 left-0 w-full h-full rounded-xl shadow-sm border border-gray-200"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/lM0OpelBJmU?si=v1Kuy0f_fnXAfugr" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
         </div>
       </section>
     </div>
