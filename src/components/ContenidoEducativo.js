@@ -64,39 +64,53 @@ export default function ContenidoEducativo() {
       </section>
 
       {/* Infografías */}
-      <section className="mb-8">
-        <h3 className="font-bold text-lg mb-2">Infografías oficiales</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-medium">Mitos y Realidades (IMSS)</h4>
-            <img 
-              src="../data/assets/suicidio_infografía.jpg" 
-              alt="Infografía IMSS" 
-              className="w-full border rounded mt-2"
-            />
+      <section className="mb-10">
+        <h3 className="text-2xl font-bold text-gray-800 mb-4">Infografías oficiales</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-transform hover:shadow-md">
+            <div className="p-3 bg-blue-50 border-b border-gray-100">
+              <h4 className="font-semibold text-gray-800">Mitos y Realidades (IMSS)</h4>
+            </div>
+            <div className="p-2">
+              <img 
+                src="../assets/infographics/suicidio_infografía.jpg" 
+                alt="Infografía del IMSS sobre mitos y realidades del suicidio"
+                className="w-full h-auto rounded-lg border border-gray-200 object-contain"
+                loading="lazy"
+              />
+            </div>
           </div>
-          <div>
-            <h4 className="font-medium">SIGNOS DE ALARMA (PAHO)</h4>
-            <img 
-              src="../data/assets/infografia-conducta-suicida.jpg" 
-              alt="Infografía PAHO" 
-              className="w-full border rounded mt-2"
-            />
+      
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-transform hover:shadow-md">
+            <div className="p-3 bg-blue-50 border-b border-gray-100">
+              <h4 className="font-semibold text-gray-800">Signos de alarma (OPS/PAHO)</h4>
+            </div>
+            <div className="p-2">
+              <img 
+                src="../assets/infographics/infografia-conducta-suicida.jpg" 
+                alt="Infografía de la OPS sobre signos de alarma de conducta suicida"
+                className="w-full h-auto rounded-lg border border-gray-200 object-contain"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
-
+      
       {/* Video */}
-      <section>
-        <h3 className="font-bold text-lg mb-2">Prevención del suicidio - Secretaría de Salud</h3>
-        <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/lM0OpelBJmU?si=v1Kuy0f_fnXAfugr" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
+      <section className="mb-10">
+        <h3 className="text-2xl font-bold text-gray-800 mb-4">Suicidio: cómo identificar los signos de alerta</h3>
+        <div className="relative pt-[56.25%] max-w-4xl mx-auto"> {/* 16:9 aspect ratio */}
+          <iframe
+            src="https://www.youtube.com/embed/JqX1cX0jKqU?rel=0&modestbranding=1"
+            title="Prevención del suicidio - Secretaría de Salud"
+            className="absolute top-0 left-0 w-full h-full rounded-xl shadow-sm border border-gray-200"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+        </div>
       </section>
     </div>
   );
