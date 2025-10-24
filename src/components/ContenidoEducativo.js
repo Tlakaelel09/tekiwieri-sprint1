@@ -90,7 +90,8 @@ export default function ContenidoEducativo() {
             <img 
               src={infografia_conducta_suicida}
               alt="Infografía de la OPS sobre signos de alarma de conducta suicida"
-              className="w-full max-w-[400px] h-auto rounded-lg border border-gray-200 shadow-sm"
+              className="max-w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+              style={{ width: '100%', maxWidth: '400px' }}
               loading="lazy"
             />
           </div>
