@@ -91,7 +91,7 @@ export default function ContenidoEducativo() {
               src={infografia_conducta_suicida}
               alt="Infografía de la OPS sobre signos de alarma de conducta suicida"
               className="max-w-full h-auto rounded-lg border border-gray-200 shadow-sm"
-              style={{ width: '100%', maxWidth: '400px' }}
+              style={{ width: '100%', maxWidth: '600px' }}
               loading="lazy"
             />
           </div>
