@@ -67,34 +67,32 @@ export default function ContenidoEducativo() {
 
       {/* Infografías */}
       <section className="mb-10">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">Infografías oficiales</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-transform hover:shadow-md">
-            <div className="p-3 bg-blue-50 border-b border-gray-100">
+        <h3 className="text-2xl font-bold text-gray-800 mb-5 text-center">
+          Infografías oficiales
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+          <div className="flex flex-col items-center max-w-md">
+            <div className="text-center mb-3">
               <h4 className="font-semibold text-gray-800">Mitos y Realidades (IMSS)</h4>
             </div>
-            <div className="p-2">
-              <img 
-                src={suicidio_infografia}
-                alt="Infografía del IMSS sobre mitos y realidades del suicidio"
-                className="w-full h-auto rounded-lg border border-gray-200 object-contain"
-                loading="lazy"
-              />
-            </div>
+            <img 
+              src={suicidio_infografia}
+              alt="Infografía del IMSS sobre mitos y realidades del suicidio"
+              className="w-full max-w-[400px] h-auto rounded-lg border border-gray-200 shadow-sm"
+              loading="lazy"
+            />
           </div>
       
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-transform hover:shadow-md">
-            <div className="p-3 bg-blue-50 border-b border-gray-100">
+          <div className="flex flex-col items-center max-w-md">
+            <div className="text-center mb-3">
               <h4 className="font-semibold text-gray-800">Signos de alarma (OPS/PAHO)</h4>
             </div>
-            <div className="p-2">
-              <img 
-                src={infografia_conducta_suicida}
-                alt="Infografía de la OPS sobre signos de alarma de conducta suicida"
-                className="w-full h-auto rounded-lg border border-gray-200 object-contain"
-                loading="lazy"
-              />
-            </div>
+            <img 
+              src={infografia_conducta_suicida}
+              alt="Infografía de la OPS sobre signos de alarma de conducta suicida"
+              className="w-full max-w-[400px] h-auto rounded-lg border border-gray-200 shadow-sm"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
