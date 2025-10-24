@@ -20,57 +20,81 @@ export default function Directorio() {
   });
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Directorio de Apoyo Profesional</h2>
+    <div className="p-4 sm:p-6 max-w-4xl mx-auto">
+      <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+        Directorio de Apoyo Profesional
+      </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        <select 
-          value={locationFilter} 
-          onChange={(e) => setLocationFilter(e.target.value)}
-          className="p-2 border rounded"
-        >
-          <option value="">Todas las ubicaciones</option>
-          {locations.map(loc => (
-            <option key={loc} value={loc}>{loc}</option>
-          ))}
-        </select>
+      {/* Filtros */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Ubicación</label>
+          <select
+            value={locationFilter}
+            onChange={(e) => setLocationFilter(e.target.value)}
+            className="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm"
+          >
+            <option value="">Todas las ubicaciones</option>
+            {locations.map(loc => (
+              <option key={loc} value={loc}>{loc}</option>
+            ))}
+          </select>
+        </div>
 
-        <select 
-          value={specialtyFilter} 
-          onChange={(e) => setSpecialtyFilter(e.target.value)}
-          className="p-2 border rounded"
-        >
-          <option value="">Todas las especialidades</option>
-          {specialties.map(spec => (
-            <option key={spec} value={spec}>{spec}</option>
-          ))}
-        </select>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Especialidad</label>
+          <select
+            value={specialtyFilter}
+            onChange={(e) => setSpecialtyFilter(e.target.value)}
+            className="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm"
+          >
+            <option value="">Todas las especialidades</option>
+            {specialties.map(spec => (
+              <option key={spec} value={spec}>{spec}</option>
+            ))}
+          </select>
+        </div>
 
-        <select 
-          value={modalityFilter} 
-          onChange={(e) => setModalityFilter(e.target.value)}
-          className="p-2 border rounded"
-        >
-          <option value="">Todas las modalidades</option>
-          {modalities.map(mod => (
-            <option key={mod} value={mod}>{mod}</option>
-          ))}
-        </select>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Modalidad</label>
+          <select
+            value={modalityFilter}
+            onChange={(e) => setModalityFilter(e.target.value)}
+            className="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm"
+          >
+            <option value="">Todas las modalidades</option>
+            {modalities.map(mod => (
+              <option key={mod} value={mod}>{mod}</option>
+            ))}
+          </select>
+        </div>
       </div>
 
-      <div className="space-y-4">
+      {/* Resultados */}
+      <div className="space-y-5">
         {filtered.length > 0 ? (
           filtered.map((s, i) => (
-            <div key={i} className="p-4 border rounded shadow-sm">
-              <h3 className="font-bold text-lg">{s.nombre}</h3>
-              <p><strong>Especialidad:</strong> {s.especialidad}</p>
-              <p><strong>Ubicación:</strong> {s.ubicacion}</p>
-              <p><strong>Modalidad:</strong> {s.modalidad}</p>
-              <p><strong>Contacto:</strong> {s.contacto}</p>
+            <div
+              key={i}
+              className="p-5 border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow duration-200"
+            >
+              <h3 className="text-xl font-semibold text-gray-900">{s.nombre}</h3>
+              <div className="mt-2 space-y-1 text-gray-700">
+                <p><span className="font-medium">Especialidad:</span> {s.especialidad}</p>
+                <p><span className="font-medium">Ubicación:</span> {s.ubicacion}</p>
+                <p><span className="font-medium">Modalidad:</span> {s.modalidad}</p>
+                <p className="text-blue-600 font-medium break-words">
+                  <span className="font-medium">Contacto:</span> {s.contacto}
+                </p>
+              </div>
             </div>
           ))
         ) : (
-          <p>No se encontraron especialistas con esos filtros.</p>
+          <div className="text-center py-10 bg-gray-50 rounded-xl">
+            <p className="text-gray-600 text-lg">
+              No se encontraron especialistas con esos filtros.
+            </p>
+          </div>
         )}
       </div>
     </div>
