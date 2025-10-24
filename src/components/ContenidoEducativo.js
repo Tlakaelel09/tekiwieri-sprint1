@@ -1,5 +1,7 @@
 // src/components/ContenidoEducativo.jsx
 import React from 'react';
+import suicidio_infografia from '../assets/infographics/suicidio_infografía.jpg';
+import infografia_conducta_suicida from '../assets/infographics/infografia-conducta-suicida.jpg';
 
 export default function ContenidoEducativo() {
   return (
@@ -73,7 +75,7 @@ export default function ContenidoEducativo() {
             </div>
             <div className="p-2">
               <img 
-                src="../assets/infographics/suicidio_infografía.jpg" 
+                src="{suicidio_infografia}" 
                 alt="Infografía del IMSS sobre mitos y realidades del suicidio"
                 className="w-full h-auto rounded-lg border border-gray-200 object-contain"
                 loading="lazy"
@@ -87,7 +89,7 @@ export default function ContenidoEducativo() {
             </div>
             <div className="p-2">
               <img 
-                src="../assets/infographics/infografia-conducta-suicida.jpg" 
+                src="{infografia_conducta_suicida}" 
                 alt="Infografía de la OPS sobre signos de alarma de conducta suicida"
                 className="w-full h-auto rounded-lg border border-gray-200 object-contain"
                 loading="lazy"
