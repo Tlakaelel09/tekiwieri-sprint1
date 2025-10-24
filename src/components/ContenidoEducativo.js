@@ -70,7 +70,7 @@ export default function ContenidoEducativo() {
           <div>
             <h4 className="font-medium">Mitos y Realidades (IMSS)</h4>
             <img 
-              src="../data/infographics/suicidio_infografía.jpg" 
+              src="../data/assets/suicidio_infografía.jpg" 
               alt="Infografía IMSS" 
               className="w-full border rounded mt-2"
             />
@@ -78,7 +78,7 @@ export default function ContenidoEducativo() {
           <div>
             <h4 className="font-medium">SIGNOS DE ALARMA (PAHO)</h4>
             <img 
-              src="../data/infographics/infografia-conducta-suicida.jpg" 
+              src="../data/assets/infografia-conducta-suicida.jpg" 
               alt="Infografía PAHO" 
               className="w-full border rounded mt-2"
             />
@@ -89,16 +89,14 @@ export default function ContenidoEducativo() {
       {/* Video */}
       <section>
         <h3 className="font-bold text-lg mb-2">Prevención del suicidio - Secretaría de Salud</h3>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/JqX1cX0jKqU?rel=0&modestbranding=1"
-          title="Prevención del suicidio - Secretaría de Salud"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          loading="lazy"
-        ></iframe>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/lM0OpelBJmU?si=v1Kuy0f_fnXAfugr" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
       </section>
     </div>
   );
