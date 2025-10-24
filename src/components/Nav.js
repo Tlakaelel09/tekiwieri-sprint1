@@ -41,6 +41,18 @@ const Nav = () => {
         >
           Autoevaluación
         </Link>
+        <Link
+          className={pathname === "/directorio" ? "active" : ""}
+          to="/directorio"
+        >
+          Directorio
+        </Link>
+        <Link
+          className={pathname === "/contenido" ? "active" : ""}
+          to="/contenido"
+        >
+          Contenidos
+        </Link>
         <a className="tw-cta" href="tel:555AYUDA" title="Línea de ayuda">
           Línea de ayuda
         </a>
