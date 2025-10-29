@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import Cuestionario from "./components/Cuestionario";
 import Directorio from './components/Directorio';
 import ContenidoEducativo from './components/ContenidoEducativo';
+import RiskMap from './components/RiskMap';
+import Difusion from './components/Difusion'; 
 import "./App.css";
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/cuestionario" element={<Cuestionario />} />
             <Route path="/directorio" element={<Directorio />} />
-          <Route path="/contenido" element={<ContenidoEducativo />} />
+            <Route path="/contenido" element={<ContenidoEducativo />} />
+            <Route path="/mapa-riesgo" element={<RiskMap />} />
+            <Route path="/difusion" element={<Difusion />} 
           </Routes>
         </main>
         <Footer />
