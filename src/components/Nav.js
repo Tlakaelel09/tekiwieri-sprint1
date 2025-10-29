@@ -56,6 +56,18 @@ const Nav = () => {
         <a className="tw-cta" href="tel:555AYUDA" title="Línea de ayuda">
           Línea de ayuda
         </a>
+        <Link
+          className={pathname === "/mapa-riesgo" ? "active" : ""}
+          to="/mapa-riesgo"
+        >
+          Mapa de Riesgo
+        </Link>
+        <Link
+          className={pathname === "/difusion" ? "active" : ""}
+          to="/difusion"
+        >
+          Difusión
+        </Link>
       </nav>
     </header>
   );
