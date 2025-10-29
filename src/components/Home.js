@@ -38,42 +38,72 @@ const Home = () => {
 
       {/* FEATURES */}
       <section className="tw-features">
-        <article className="card">
-          <h3>HU-01: Botón SOS</h3>
-          <p>Acceso inmediato a contacto de emergencia desde cualquier vista.</p>
-        </article>
+        <Link to="/sos" className="card-link">
+          <article className="card">
+            <h3>HU-01: Botón SOS</h3>
+            <p>Acceso inmediato a contacto de emergencia desde cualquier vista.</p>
+          </article>
+        </Link>
       
-        <article className="card">
-          <h3>HU-02: Cuestionario</h3>
-          <p>
-            Herramienta de autoevaluación para detectar niveles de riesgo
-            emocional.
-          </p>
-        </article>
+        <Link to="/cuestionario" className="card-link">
+          <article className="card">
+            <h3>HU-02: Cuestionario</h3>
+            <p>
+              Herramienta de autoevaluación para detectar niveles de riesgo
+              emocional.
+            </p>
+          </article>
+        </Link>
       
-        <article className="card">
-          <h3>HU-06: Interfaz amigable</h3>
-          <p>
-            Navegación sencilla y clara que prioriza la accesibilidad y el
-            bienestar del usuario.
-          </p>
-        </article>
+        <Link to="/interfaz" className="card-link">
+          <article className="card">
+            <h3>HU-06: Interfaz amigable</h3>
+            <p>
+              Navegación sencilla y clara que prioriza la accesibilidad y el
+              bienestar del usuario.
+            </p>
+          </article>
+        </Link>
       
-        <article className="card">
-          <h3>HU-03: Directorio</h3>
-          <p>
-            Listado de especialistas en salud mental con filtros por ubicación y
-            especialidad.
-          </p>
-        </article>
+        <Link to="/directorio" className="card-link">
+          <article className="card">
+            <h3>HU-03: Directorio</h3>
+            <p>
+              Listado de especialistas en salud mental con filtros por ubicación y
+              especialidad.
+            </p>
+          </article>
+        </Link>
       
-        <article className="card">
-          <h3>HU-04: Contenidos educativos</h3>
-          <p>
-            Infografías, videos y artículos validados por especialistas para
-            prevención y apoyo emocional.
-          </p>
-        </article>
+        <Link to="/contenido" className="card-link">
+          <article className="card">
+            <h3>HU-04: Contenidos educativos</h3>
+            <p>
+              Infografías, videos y artículos validados por especialistas para
+              prevención y apoyo emocional.
+            </p>
+          </article>
+        </Link>
+      
+        <Link to="/mapa-riesgo" className="card-link">
+          <article className="card">
+            <h3>HU-05: Mapa de riesgo</h3>
+            <p>
+              Visualización de zonas con mayor índice de riesgo emocional en Bahía
+              de Banderas, Nayarit.
+            </p>
+          </article>
+        </Link>
+      
+        <Link to="/difusion" className="card-link">
+          <article className="card">
+            <h3>HU-07: Estrategia de difusión</h3>
+            <p>
+              Materiales descargables para redes sociales, docentes y promoción
+              comunitaria.
+            </p>
+          </article>
+        </Link>
       </section>
     </>
   );
