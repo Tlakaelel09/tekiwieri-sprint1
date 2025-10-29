@@ -1,21 +1,21 @@
 import React, { useEffect, useRef } from 'react';
-import 'leaflet/dist/leaflet.css';
 
 export default function RiskMap() {
   const mapRef = useRef(null);
 
   useEffect(() => {
-    // Solo cargar Leaflet en el cliente (no en SSR)
-    import('leaflet').then((L) => {
-      if (!mapRef.current) return;
+    // Solo ejecutar en el navegador
+    if (typeof window !== 'undefined' && window.L) {
+      const L = window.L;
 
-      const map = L.map(mapRef.current).setView([20.8300, -105.3000], 11); // Coordenadas de Bahía de Banderas
+      // Coordenadas de Bahía de Banderas, Nayarit
+      const map = L.map(mapRef.current).setView([20.8300, -105.3000], 11);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap'
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       }).addTo(map);
 
-      // Zonas simuladas (solo Bahía de Banderas)
+      // Zonas simuladas dentro del municipio
       const zones = [
         { name: "Valle de Banderas", coords: [20.8500, -105.2800], risk: "alto" },
         { name: "San Vicente", coords: [20.8100, -105.3200], risk: "medio" },
@@ -35,9 +35,9 @@ export default function RiskMap() {
           fillOpacity: 0.7
         })
         .addTo(map)
-        .bindPopup(`<b>${zone.name}</b><br>Riesgo: ${zone.risk}`);
+        .bindPopup(`<b>${zone.name}</b><br>Riesgo emocional: ${zone.risk}`);
       });
-    });
+    }
   }, []);
 
   return (
