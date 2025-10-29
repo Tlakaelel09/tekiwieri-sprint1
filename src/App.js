@@ -22,7 +22,7 @@ function App() {
             <Route path="/directorio" element={<Directorio />} />
             <Route path="/contenido" element={<ContenidoEducativo />} />
             <Route path="/mapa-riesgo" element={<RiskMap />} />
-            <Route path="/difusion" element={<Difusion />} 
+            <Route path="/difusion" element={<Difusion />} />
           </Routes>
         </main>
         <Footer />
