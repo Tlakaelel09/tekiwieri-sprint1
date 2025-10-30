@@ -31,7 +31,7 @@ export default function Difusion() {
               src={post_ig_1}
               alt="Post Instagram" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
-              style={{ width: '100%', maxHeight: '300px' }}
+              style={{ maxHeight: '300px' }}
             /><br />
             <a 
               href={post_ig_1} 
@@ -46,7 +46,7 @@ export default function Difusion() {
               src={post_tiktok_1} 
               alt="Post TikTok" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
-              style={{ width: '100%', maxHeight: '300px' }}
+              style={{ maxHeight: '300px' }}
             /><br />
             <a 
               href={post_tiktok_1} 
