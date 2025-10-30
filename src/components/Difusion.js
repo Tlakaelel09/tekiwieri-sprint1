@@ -1,4 +1,7 @@
 import React from 'react';
+import post_ig_1 from '../materials/post-ig-1.jpeg';
+import post_tiktok_1 from '../materials/post-tiktok-1.jpeg';
+import qr_tekiwieri from '../materials/qr-tekiwieri.png';
 
 export default function Difusion() {
   return (
@@ -11,7 +14,7 @@ export default function Difusion() {
           Descarga nuestra guía breve para usar Teki Wieri en el aula y promover la salud emocional.
         </p>
         <a 
-          href="/materials/guia-docentes.pdf" 
+          href="../materials/guia-docentes.pdf" 
           download 
           className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
         >
@@ -24,12 +27,12 @@ export default function Difusion() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="border rounded-lg p-3 text-center">
             <img 
-              src="/materials/post-ig-1.png" 
+              src={post_ig_1}
               alt="Post Instagram" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
             />
             <a 
-              href="/materials/post-ig-1.jpeg" 
+              href={post_ig_1} 
               download 
               className="text-blue-600 hover:underline"
             >
@@ -38,12 +41,12 @@ export default function Difusion() {
           </div>
           <div className="border rounded-lg p-3 text-center">
             <img 
-              src="/materials/post-tiktok-1.jpeg" 
+              src={post_tiktok_1} 
               alt="Post TikTok" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
             />
             <a 
-              href="/materials/post-tiktok-1.png" 
+              href={post_tiktok_1} 
               download 
               className="text-blue-600 hover:underline"
             >
@@ -56,7 +59,7 @@ export default function Difusion() {
       <div className="text-center p-5 bg-gray-50 rounded-xl">
         <h3 className="text-xl font-semibold mb-3">Accede rápido con QR</h3>
         <img 
-          src="/materials/qr-tekiwieri.png" 
+          src={qr_tekiwieri}
           alt="Código QR para Teki Wieri" 
           className="w-32 h-32 mx-auto mb-3"
         />
