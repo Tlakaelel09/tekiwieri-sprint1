@@ -31,14 +31,14 @@ export default function Difusion() {
               src={post_ig_1}
               alt="Post Instagram" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
-              style={{ width: '100%', maxWidth: '300px' }}
+              style={{ width: '100%', maxHeight: '300px' }}
             /><br>
             <a 
               href={post_ig_1} 
               download 
               className="text-blue-600 hover:underline"
             >
-              <Descargar (Instagram)
+              Descargar (Instagram)
             </a>
           </div>
           <div className="border rounded-lg p-3 text-center">
@@ -46,7 +46,7 @@ export default function Difusion() {
               src={post_tiktok_1} 
               alt="Post TikTok" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
-              style={{ width: '100%', maxWidth: '300px' }}
+              style={{ width: '100%', maxHeight: '300px' }}
             /><br>
             <a 
               href={post_tiktok_1} 
