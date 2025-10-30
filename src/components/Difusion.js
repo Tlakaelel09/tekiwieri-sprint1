@@ -29,7 +29,7 @@ export default function Difusion() {
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
             />
             <a 
-              href="/materials/post-ig-1.png" 
+              href="/materials/post-ig-1.jpeg" 
               download 
               className="text-blue-600 hover:underline"
             >
@@ -38,7 +38,7 @@ export default function Difusion() {
           </div>
           <div className="border rounded-lg p-3 text-center">
             <img 
-              src="/materials/post-tiktok-1.png" 
+              src="/materials/post-tiktok-1.jpeg" 
               alt="Post TikTok" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
             />
