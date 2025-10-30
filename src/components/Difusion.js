@@ -2,6 +2,7 @@ import React from 'react';
 import post_ig_1 from '../materials/post-ig-1.jpeg';
 import post_tiktok_1 from '../materials/post-tiktok-1.jpeg';
 import qr_tekiwieri from '../materials/qr-tekiwieri.png';
+import guia_docentes from '../materials/guia-docentes.pdf';
 
 export default function Difusion() {
   return (
@@ -14,7 +15,7 @@ export default function Difusion() {
           Descarga nuestra guía breve para usar Teki Wieri en el aula y promover la salud emocional.
         </p>
         <a 
-          href="../materials/guia-docentes.pdf" 
+          href={guia_docentes} 
           download 
           className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
         >
@@ -30,6 +31,7 @@ export default function Difusion() {
               src={post_ig_1}
               alt="Post Instagram" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
+              style={{ width: '100%', maxWidth: '600px' }}
             />
             <a 
               href={post_ig_1} 
@@ -44,6 +46,7 @@ export default function Difusion() {
               src={post_tiktok_1} 
               alt="Post TikTok" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
+              style={{ width: '100%', maxWidth: '600px' }}
             />
             <a 
               href={post_tiktok_1} 
@@ -62,6 +65,7 @@ export default function Difusion() {
           src={qr_tekiwieri}
           alt="Código QR para Teki Wieri" 
           className="w-32 h-32 mx-auto mb-3"
+          style={{ width: '100%', maxWidth: '200px' }}
         />
         <p>Escanea y comparte Teki Wieri en segundos.</p>
       </div>
