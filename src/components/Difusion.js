@@ -47,7 +47,7 @@ export default function Difusion() {
               alt="Post TikTok" 
               className="w-full max-w-[300px] h-auto mx-auto mb-2"
               style={{ width: '100%', maxHeight: '300px' }}
-            /><<br />
+            /><br />
             <a 
               href={post_tiktok_1} 
               download 
